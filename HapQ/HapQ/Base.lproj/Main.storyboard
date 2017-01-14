@@ -62,16 +62,16 @@
                         <viewControllerLayoutGuide type="top" id="k4X-aZ-H9r"/>
                         <viewControllerLayoutGuide type="bottom" id="t5i-kx-gvh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1k7-a6-70P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="1k7-a6-70P">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-rp-6aT">
-                                <rect key="frame" x="96" y="122" width="184" height="184"/>
+                                <rect key="frame" x="96" y="58" width="184" height="184"/>
                                 <state key="normal" title="Button" image="dotted-circle"/>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-Hl-1AY">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="554" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
@@ -81,28 +81,30 @@
                                 </items>
                             </tabBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-kE-tr8" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="68" y="382" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.87690224329999999" green="0.96135374409999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="318" width="375" height="192"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.91318396530000001" green="0.95925068410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="TDq-kE-tr8" secondAttribute="trailing" constant="51" id="PSf-ua-pq7"/>
                             <constraint firstItem="t5i-kx-gvh" firstAttribute="top" secondItem="TDq-kE-tr8" secondAttribute="bottom" constant="157" id="S22-P9-8Er"/>
+                            <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leading" id="Zyw-xN-jOf"/>
+                            <constraint firstAttribute="trailing" secondItem="TDq-kE-tr8" secondAttribute="trailing" id="afu-Fk-3ad"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="52" id="cch-tR-jIp"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="76" id="gc1-YT-bzU"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="centerX" secondItem="1k7-a6-70P" secondAttribute="centerX" id="lse-fC-E20"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="80" id="sFQ-iS-mp3"/>
-                            <constraint firstItem="TDq-kE-tr8" firstAttribute="centerX" secondItem="1k7-a6-70P" secondAttribute="centerX" id="sdS-2F-pLm"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="top" secondItem="k4X-aZ-H9r" secondAttribute="bottom" constant="58" id="v9h-gt-HdH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pOe-rp-6aT" secondAttribute="trailing" constant="79" id="zXz-SG-byS"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="0RL-18-cJ1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="U6R-ql-o9X"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="barChart" destination="TDq-kE-tr8" id="Pfc-Vb-vXy"/>
+                        <outlet property="barChart" destination="TDq-kE-tr8" id="2CB-cu-fCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YsP-LR-Thn" userLabel="First Responder" sceneMemberID="firstResponder"/>
