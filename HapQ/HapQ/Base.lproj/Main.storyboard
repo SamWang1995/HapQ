@@ -81,15 +81,6 @@
                                     <action selector="addMood:" destination="sx3-c2-FUJ" eventType="touchUpInside" id="g3Z-wa-lsy"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-Hl-1AY">
-                                <rect key="frame" x="0.0" y="554" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Monthly" id="B3N-YD-Rpp"/>
-                                    <tabBarItem title="HapQ" id="u2D-y3-N1j"/>
-                                </items>
-                            </tabBar>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-kE-tr8" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="275" width="375" height="171"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,17 +89,18 @@
                         <color key="backgroundColor" red="0.91318396530000001" green="0.95925068410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="TDq-kE-tr8" secondAttribute="trailing" constant="51" id="PSf-ua-pq7"/>
-                            <constraint firstItem="t5i-kx-gvh" firstAttribute="top" secondItem="TDq-kE-tr8" secondAttribute="bottom" constant="70" id="S22-P9-8Er"/>
+                            <constraint firstItem="t5i-kx-gvh" firstAttribute="top" secondItem="TDq-kE-tr8" secondAttribute="bottom" constant="30" id="S22-P9-8Er"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leading" id="Zyw-xN-jOf"/>
                             <constraint firstAttribute="trailing" secondItem="TDq-kE-tr8" secondAttribute="trailing" id="afu-Fk-3ad"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="52" id="cch-tR-jIp"/>
-                            <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="86" id="gc1-YT-bzU"/>
+                            <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="56" id="gc1-YT-bzU"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="90" id="sFQ-iS-mp3"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="top" secondItem="k4X-aZ-H9r" secondAttribute="bottom" constant="38" id="v9h-gt-HdH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pOe-rp-6aT" secondAttribute="trailing" constant="69" id="zXz-SG-byS"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="dyN-mI-PAl"/>
                     <navigationItem key="navigationItem" id="0RL-18-cJ1">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="U6R-ql-o9X"/>
                     </navigationItem>
@@ -120,7 +112,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YsP-LR-Thn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="2588" y="36.431784107946029"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S4U-mZ-LL2">
+            <objects>
+                <viewController id="CMV-d4-y0k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYE-GX-a1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="cvs-Fp-oy3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mgx-wi-mCj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="wm6-8i-9ND"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIQ-cE-Qlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2588" y="725"/>
         </scene>
         <!--Mood View Controller-->
         <scene sceneID="iUM-za-X3S">
@@ -135,28 +146,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpO-yp-KxB">
-                                <rect key="frame" x="16" y="154" width="49.5" height="50"/>
+                                <rect key="frame" x="16" y="198" width="49.5" height="50"/>
                                 <state key="normal" image="b"/>
                                 <connections>
                                     <action selector="terrible:" destination="bfN-uG-pmG" eventType="touchUpInside" id="b7Q-IM-YYz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-gm-wOg">
-                                <rect key="frame" x="161.5" y="154" width="49.5" height="50"/>
+                                <rect key="frame" x="161.5" y="198" width="49.5" height="50"/>
                                 <state key="normal" image="d"/>
                                 <connections>
                                     <action selector="neutral:" destination="bfN-uG-pmG" eventType="touchUpInside" id="pzQ-wg-Dak"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-V3-HeS">
-                                <rect key="frame" x="88.5" y="154" width="50" height="50"/>
+                                <rect key="frame" x="88.5" y="198" width="50" height="50"/>
                                 <state key="normal" image="c"/>
                                 <connections>
                                     <action selector="sad:" destination="bfN-uG-pmG" eventType="touchUpInside" id="1o0-Tr-JKf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lB-m3-Akl">
-                                <rect key="frame" x="309" y="154" width="50" height="50"/>
+                                <rect key="frame" x="309" y="198" width="50" height="50"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="e">
@@ -167,7 +178,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-ah-pWf">
-                                <rect key="frame" x="234" y="154" width="50" height="50"/>
+                                <rect key="frame" x="234" y="198" width="50" height="50"/>
                                 <state key="normal" image="a"/>
                                 <connections>
                                     <action selector="happy:" destination="bfN-uG-pmG" eventType="touchUpInside" id="Y9a-zN-m2Q"/>
@@ -186,14 +197,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cA3-Yk-ydG">
-                                <rect key="frame" x="67" y="262" width="240" height="143"/>
+                                <rect key="frame" x="67" y="311" width="240" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" label="Text"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4m-U1-08W">
-                                <rect key="frame" x="143" y="455" width="72" height="30"/>
+                                <rect key="frame" x="143" y="406" width="72" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="submit">
                                     <color key="titleColor" red="1" green="0.71512601472429871" blue="0.7198667095217226" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -236,12 +247,12 @@
                     </view>
                     <connections>
                         <outlet property="texr" destination="4gO-Ce-MGe" id="esK-N6-KLn"/>
-                        <segue destination="sx3-c2-FUJ" kind="presentation" identifier="setMood" id="R8U-P3-VbZ"/>
+                        <segue destination="QHG-SP-bWq" kind="presentation" identifier="setMood" id="J7P-s7-YBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2d3-dc-2ei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="36.431784107946029"/>
+            <point key="canvasLocation" x="3519.1999999999998" y="36.431784107946029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iZb-bd-KkI">
@@ -254,12 +265,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="sx3-c2-FUJ" kind="relationship" relationship="rootViewController" id="Cw0-8A-X9G"/>
+                        <segue destination="KAX-cb-UkC" kind="relationship" relationship="rootViewController" id="Cw0-8A-X9G"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvU-jR-dLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="37.331334332833585"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="u4y-CX-PWD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KAX-cb-UkC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Jpw-23-DPG"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Yi7-cg-CIm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sx3-c2-FUJ" kind="relationship" relationship="viewControllers" id="DZe-xJ-gc0"/>
+                        <segue destination="CMV-d4-y0k" kind="relationship" relationship="viewControllers" id="AVW-Sd-3Y0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpJ-tK-Od0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.8" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
@@ -272,6 +302,6 @@
         <image name="e" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cw0-8A-X9G"/>
+        <segue reference="J7P-s7-YBP"/>
     </inferredMetricsTieBreakers>
 </document>
