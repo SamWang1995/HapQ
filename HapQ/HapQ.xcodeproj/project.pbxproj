@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22EB3AD61E29F02D0079C34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3AD51E29F02D0079C34C /* AppDelegate.swift */; };
+		22EB3AD81E29F02D0079C34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3AD71E29F02D0079C34C /* ViewController.swift */; };
+		22EB3ADB1E29F02D0079C34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3AD91E29F02D0079C34C /* Main.storyboard */; };
+		22EB3ADD1E29F02D0079C34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3ADC1E29F02D0079C34C /* Assets.xcassets */; };
+		22EB3AE01E29F02D0079C34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3ADE1E29F02D0079C34C /* LaunchScreen.storyboard */; };
+		22EB3AEB1E29F02D0079C34C /* HapQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3AEA1E29F02D0079C34C /* HapQTests.swift */; };
+		22EB3AF61E29F02D0079C34C /* HapQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3AF51E29F02D0079C34C /* HapQUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22EB3AE71E29F02D0079C34C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EB3ACA1E29F02D0079C34C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EB3AD11E29F02D0079C34C;
+			remoteInfo = HapQ;
+		};
+		22EB3AF21E29F02D0079C34C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EB3ACA1E29F02D0079C34C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EB3AD11E29F02D0079C34C;
+			remoteInfo = HapQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22EB3AD21E29F02D0079C34C /* HapQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EB3AD51E29F02D0079C34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22EB3AD71E29F02D0079C34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22EB3ADA1E29F02D0079C34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22EB3ADC1E29F02D0079C34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22EB3ADF1E29F02D0079C34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22EB3AE11E29F02D0079C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EB3AE61E29F02D0079C34C /* HapQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EB3AEA1E29F02D0079C34C /* HapQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapQTests.swift; sourceTree = "<group>"; };
+		22EB3AEC1E29F02D0079C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EB3AF11E29F02D0079C34C /* HapQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EB3AF51E29F02D0079C34C /* HapQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapQUITests.swift; sourceTree = "<group>"; };
+		22EB3AF71E29F02D0079C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22EB3ACF1E29F02D0079C34C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AE31E29F02D0079C34C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AEE1E29F02D0079C34C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EB3AC91E29F02D0079C34C = {
+			isa = PBXGroup;
+			children = (
+				22EB3AD41E29F02D0079C34C /* HapQ */,
+				22EB3AE91E29F02D0079C34C /* HapQTests */,
+				22EB3AF41E29F02D0079C34C /* HapQUITests */,
+				22EB3AD31E29F02D0079C34C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22EB3AD31E29F02D0079C34C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22EB3AD21E29F02D0079C34C /* HapQ.app */,
+				22EB3AE61E29F02D0079C34C /* HapQTests.xctest */,
+				22EB3AF11E29F02D0079C34C /* HapQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22EB3AD41E29F02D0079C34C /* HapQ */ = {
+			isa = PBXGroup;
+			children = (
+				22EB3AD51E29F02D0079C34C /* AppDelegate.swift */,
+				22EB3AD71E29F02D0079C34C /* ViewController.swift */,
+				22EB3AD91E29F02D0079C34C /* Main.storyboard */,
+				22EB3ADC1E29F02D0079C34C /* Assets.xcassets */,
+				22EB3ADE1E29F02D0079C34C /* LaunchScreen.storyboard */,
+				22EB3AE11E29F02D0079C34C /* Info.plist */,
+			);
+			path = HapQ;
+			sourceTree = "<group>";
+		};
+		22EB3AE91E29F02D0079C34C /* HapQTests */ = {
+			isa = PBXGroup;
+			children = (
+				22EB3AEA1E29F02D0079C34C /* HapQTests.swift */,
+				22EB3AEC1E29F02D0079C34C /* Info.plist */,
+			);
+			path = HapQTests;
+			sourceTree = "<group>";
+		};
+		22EB3AF41E29F02D0079C34C /* HapQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22EB3AF51E29F02D0079C34C /* HapQUITests.swift */,
+				22EB3AF71E29F02D0079C34C /* Info.plist */,
+			);
+			path = HapQUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22EB3AD11E29F02D0079C34C /* HapQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EB3AFA1E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQ" */;
+			buildPhases = (
+				22EB3ACE1E29F02D0079C34C /* Sources */,
+				22EB3ACF1E29F02D0079C34C /* Frameworks */,
+				22EB3AD01E29F02D0079C34C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapQ;
+			productName = HapQ;
+			productReference = 22EB3AD21E29F02D0079C34C /* HapQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22EB3AE51E29F02D0079C34C /* HapQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EB3AFD1E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQTests" */;
+			buildPhases = (
+				22EB3AE21E29F02D0079C34C /* Sources */,
+				22EB3AE31E29F02D0079C34C /* Frameworks */,
+				22EB3AE41E29F02D0079C34C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22EB3AE81E29F02D0079C34C /* PBXTargetDependency */,
+			);
+			name = HapQTests;
+			productName = HapQTests;
+			productReference = 22EB3AE61E29F02D0079C34C /* HapQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22EB3AF01E29F02D0079C34C /* HapQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EB3B001E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQUITests" */;
+			buildPhases = (
+				22EB3AED1E29F02D0079C34C /* Sources */,
+				22EB3AEE1E29F02D0079C34C /* Frameworks */,
+				22EB3AEF1E29F02D0079C34C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22EB3AF31E29F02D0079C34C /* PBXTargetDependency */,
+			);
+			name = HapQUITests;
+			productName = HapQUITests;
+			productReference = 22EB3AF11E29F02D0079C34C /* HapQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22EB3ACA1E29F02D0079C34C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Samuel Wang";
+				TargetAttributes = {
+					22EB3AD11E29F02D0079C34C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					22EB3AE51E29F02D0079C34C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22EB3AD11E29F02D0079C34C;
+					};
+					22EB3AF01E29F02D0079C34C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22EB3AD11E29F02D0079C34C;
+					};
+				};
+			};
+			buildConfigurationList = 22EB3ACD1E29F02D0079C34C /* Build configuration list for PBXProject "HapQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22EB3AC91E29F02D0079C34C;
+			productRefGroup = 22EB3AD31E29F02D0079C34C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22EB3AD11E29F02D0079C34C /* HapQ */,
+				22EB3AE51E29F02D0079C34C /* HapQTests */,
+				22EB3AF01E29F02D0079C34C /* HapQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22EB3AD01E29F02D0079C34C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB3AE01E29F02D0079C34C /* LaunchScreen.storyboard in Resources */,
+				22EB3ADD1E29F02D0079C34C /* Assets.xcassets in Resources */,
+				22EB3ADB1E29F02D0079C34C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AE41E29F02D0079C34C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AEF1E29F02D0079C34C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22EB3ACE1E29F02D0079C34C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB3AD81E29F02D0079C34C /* ViewController.swift in Sources */,
+				22EB3AD61E29F02D0079C34C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AE21E29F02D0079C34C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB3AEB1E29F02D0079C34C /* HapQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EB3AED1E29F02D0079C34C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EB3AF61E29F02D0079C34C /* HapQUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22EB3AE81E29F02D0079C34C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EB3AD11E29F02D0079C34C /* HapQ */;
+			targetProxy = 22EB3AE71E29F02D0079C34C /* PBXContainerItemProxy */;
+		};
+		22EB3AF31E29F02D0079C34C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EB3AD11E29F02D0079C34C /* HapQ */;
+			targetProxy = 22EB3AF21E29F02D0079C34C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22EB3AD91E29F02D0079C34C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EB3ADA1E29F02D0079C34C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22EB3ADE1E29F02D0079C34C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EB3ADF1E29F02D0079C34C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22EB3AF81E29F02D0079C34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22EB3AF91E29F02D0079C34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22EB3AFB1E29F02D0079C34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HapQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22EB3AFC1E29F02D0079C34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HapQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22EB3AFE1E29F02D0079C34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HapQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapQ.app/HapQ";
+			};
+			name = Debug;
+		};
+		22EB3AFF1E29F02D0079C34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HapQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapQ.app/HapQ";
+			};
+			name = Release;
+		};
+		22EB3B011E29F02D0079C34C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HapQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HapQ;
+			};
+			name = Debug;
+		};
+		22EB3B021E29F02D0079C34C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HapQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HapQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HapQ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22EB3ACD1E29F02D0079C34C /* Build configuration list for PBXProject "HapQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB3AF81E29F02D0079C34C /* Debug */,
+				22EB3AF91E29F02D0079C34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EB3AFA1E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB3AFB1E29F02D0079C34C /* Debug */,
+				22EB3AFC1E29F02D0079C34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22EB3AFD1E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB3AFE1E29F02D0079C34C /* Debug */,
+				22EB3AFF1E29F02D0079C34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22EB3B001E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EB3B011E29F02D0079C34C /* Debug */,
+				22EB3B021E29F02D0079C34C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22EB3ACA1E29F02D0079C34C /* Project object */;
+}
