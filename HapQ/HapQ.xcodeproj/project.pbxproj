@@ -98,14 +98,14 @@
 		22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts.xcodeproj; sourceTree = "<group>"; };
 		22EB3B1A1E2A94B10079C34C /* BarChartFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartFormatter.swift; sourceTree = "<group>"; };
 		22EB3B291E2ABB980079C34C /* MoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
-		22EB3B2E1E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBoldItalic.otf"; path = "../../../../Downloads/cabin/Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
-		22EB3B2F1E2AC5FC0079C34C /* Cabin-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBold.otf"; path = "../../../../Downloads/cabin/Cabin-SemiBold.otf"; sourceTree = "<group>"; };
-		22EB3B301E2AC5FC0079C34C /* Cabin-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Regular.otf"; path = "../../../../Downloads/cabin/Cabin-Regular.otf"; sourceTree = "<group>"; };
-		22EB3B311E2AC5FC0079C34C /* Cabin-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-MediumItalic.otf"; path = "../../../../Downloads/cabin/Cabin-MediumItalic.otf"; sourceTree = "<group>"; };
-		22EB3B321E2AC5FC0079C34C /* Cabin-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.otf"; path = "../../../../Downloads/cabin/Cabin-Medium.otf"; sourceTree = "<group>"; };
-		22EB3B331E2AC5FC0079C34C /* Cabin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Italic.otf"; path = "../../../../Downloads/cabin/Cabin-Italic.otf"; sourceTree = "<group>"; };
-		22EB3B341E2AC5FC0079C34C /* Cabin-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-BoldItalic.otf"; path = "../../../../Downloads/cabin/Cabin-BoldItalic.otf"; sourceTree = "<group>"; };
-		22EB3B351E2AC5FC0079C34C /* Cabin-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.otf"; path = "../../../../Downloads/cabin/Cabin-Bold.otf"; sourceTree = "<group>"; };
+		22EB3B2E1E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBoldItalic.otf"; path = "../../cabin/Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		22EB3B2F1E2AC5FC0079C34C /* Cabin-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBold.otf"; path = "../../cabin/Cabin-SemiBold.otf"; sourceTree = "<group>"; };
+		22EB3B301E2AC5FC0079C34C /* Cabin-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Regular.otf"; path = "../../cabin/Cabin-Regular.otf"; sourceTree = "<group>"; };
+		22EB3B311E2AC5FC0079C34C /* Cabin-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-MediumItalic.otf"; path = "../../cabin/Cabin-MediumItalic.otf"; sourceTree = "<group>"; };
+		22EB3B321E2AC5FC0079C34C /* Cabin-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.otf"; path = "../../cabin/Cabin-Medium.otf"; sourceTree = "<group>"; };
+		22EB3B331E2AC5FC0079C34C /* Cabin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Italic.otf"; path = "../../cabin/Cabin-Italic.otf"; sourceTree = "<group>"; };
+		22EB3B341E2AC5FC0079C34C /* Cabin-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-BoldItalic.otf"; path = "../../cabin/Cabin-BoldItalic.otf"; sourceTree = "<group>"; };
+		22EB3B351E2AC5FC0079C34C /* Cabin-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.otf"; path = "../../cabin/Cabin-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
