@@ -11,9 +11,11 @@ import Charts
 
 class HomeViewController: UIViewController {
     
+    
     @IBAction func addMood(_ sender: UIButton) {
         performSegue(withIdentifier: "toMood", sender: self)
     }
+    @IBOutlet weak var mood: UIButton!
     
     @IBOutlet weak var barChart: BarChartView!
     
@@ -25,7 +27,24 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if(File.shared.moodStr == "ecstatic"){
+            mood.setImage(UIImage(named: "5.png"), for: .normal)
+        }
+        else if(File.shared.moodStr == "happy"){
+            mood.setImage(UIImage(named: "1.png"), for: .normal)
+        }
+        else if(File.shared.moodStr == "neutral"){
+            mood.setImage(UIImage(named: "4.png"), for: .normal)
+        }
+        else if(File.shared.moodStr == "sad"){
+            mood.setImage(UIImage(named: "3.png"), for: .normal)
+        }
+        else if(File.shared.moodStr == "terrible"){
+            mood.setImage(UIImage(named: "2.png"), for: .normal)
+        }
+        else{
+            mood.setImage(UIImage(named: "dotted-circle.png"), for: .normal)
+        }
         setChart(dataPoints: days, values: happinessLevel)
         // Do any additional setup after loading the view.
     }

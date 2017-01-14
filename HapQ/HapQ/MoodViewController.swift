@@ -12,13 +12,19 @@ class MoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBOutlet weak var texr: UILabel!
@@ -27,6 +33,10 @@ class MoodViewController: UIViewController {
         texr.text = "terrible"
     }
     
+    @IBAction func submit(_ sender: UIButton) {
+        File.shared.moodStr = texr.text!
+        performSegue(withIdentifier: "setMood", sender: self)
+    }
     
     @IBAction func sad(_ sender: Any) {
         texr.text = "sad"

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,8 +75,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-rp-6aT">
-                                <rect key="frame" x="106" y="58" width="184" height="184"/>
-                                <state key="normal" title="Button" image="dotted-circle"/>
+                                <rect key="frame" x="106" y="38" width="184" height="184"/>
+                                <state key="normal" image="dotted-circle"/>
                                 <connections>
                                     <action selector="addMood:" destination="sx3-c2-FUJ" eventType="touchUpInside" id="g3Z-wa-lsy"/>
                                 </connections>
@@ -86,9 +86,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="history" id="B3N-YD-Rpp"/>
-                                    <tabBarItem systemItem="favorites" id="fPO-nJ-ElD"/>
-                                    <tabBarItem title="Item" id="u2D-y3-N1j"/>
+                                    <tabBarItem title="Monthly" id="B3N-YD-Rpp"/>
+                                    <tabBarItem title="HapQ" id="u2D-y3-N1j"/>
                                 </items>
                             </tabBar>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-kE-tr8" customClass="BarChartView" customModule="Charts">
@@ -105,16 +104,17 @@
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="52" id="cch-tR-jIp"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="86" id="gc1-YT-bzU"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="90" id="sFQ-iS-mp3"/>
-                            <constraint firstItem="pOe-rp-6aT" firstAttribute="top" secondItem="k4X-aZ-H9r" secondAttribute="bottom" constant="58" id="v9h-gt-HdH"/>
+                            <constraint firstItem="pOe-rp-6aT" firstAttribute="top" secondItem="k4X-aZ-H9r" secondAttribute="bottom" constant="38" id="v9h-gt-HdH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pOe-rp-6aT" secondAttribute="trailing" constant="69" id="zXz-SG-byS"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="0RL-18-cJ1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="U6R-ql-o9X"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="U6R-ql-o9X"/>
                     </navigationItem>
                     <connections>
                         <outlet property="barChart" destination="TDq-kE-tr8" id="2CB-cu-fCY"/>
+                        <outlet property="mood" destination="pOe-rp-6aT" id="JiO-IY-ZyQ"/>
                         <segue destination="bfN-uG-pmG" kind="show" identifier="toMood" id="c5Z-yp-gOf"/>
                     </connections>
                 </viewController>
@@ -135,36 +135,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpO-yp-KxB">
-                                <rect key="frame" x="16" y="198" width="50" height="50"/>
-                                <state key="normal" title="Button" image="unnamed"/>
+                                <rect key="frame" x="16" y="154" width="49.5" height="50"/>
+                                <state key="normal" image="b"/>
                                 <connections>
                                     <action selector="terrible:" destination="bfN-uG-pmG" eventType="touchUpInside" id="b7Q-IM-YYz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-gm-wOg">
-                                <rect key="frame" x="161.5" y="198" width="50" height="50"/>
-                                <state key="normal" title="Button" image="unnamed (3)"/>
+                                <rect key="frame" x="161.5" y="154" width="49.5" height="50"/>
+                                <state key="normal" image="d"/>
                                 <connections>
                                     <action selector="neutral:" destination="bfN-uG-pmG" eventType="touchUpInside" id="pzQ-wg-Dak"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-V3-HeS">
-                                <rect key="frame" x="89" y="198" width="49.5" height="50"/>
-                                <state key="normal" title="Button" image="unnamed (2)"/>
+                                <rect key="frame" x="88.5" y="154" width="50" height="50"/>
+                                <state key="normal" image="c"/>
                                 <connections>
                                     <action selector="sad:" destination="bfN-uG-pmG" eventType="touchUpInside" id="1o0-Tr-JKf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lB-m3-Akl">
-                                <rect key="frame" x="309" y="198" width="50" height="50"/>
-                                <state key="normal" title="Button" image="unnamed (4)"/>
+                                <rect key="frame" x="309" y="154" width="50" height="50"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="e">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="ecstatic:" destination="bfN-uG-pmG" eventType="touchUpInside" id="Sp6-zb-uJY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-ah-pWf">
-                                <rect key="frame" x="234.5" y="198" width="49.5" height="50"/>
-                                <state key="normal" title="Button" image="unnamed (1)"/>
+                                <rect key="frame" x="234" y="154" width="50" height="50"/>
+                                <state key="normal" image="a"/>
                                 <connections>
                                     <action selector="happy:" destination="bfN-uG-pmG" eventType="touchUpInside" id="Y9a-zN-m2Q"/>
                                 </connections>
@@ -182,18 +186,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cA3-Yk-ydG">
-                                <rect key="frame" x="67" y="272" width="240" height="123"/>
+                                <rect key="frame" x="67" y="262" width="240" height="143"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <accessibility key="accessibilityConfiguration" label="Text"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4m-U1-08W">
-                                <rect key="frame" x="143" y="445" width="72" height="40"/>
+                                <rect key="frame" x="143" y="455" width="72" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="submit">
                                     <color key="titleColor" red="1" green="0.71512601472429871" blue="0.7198667095217226" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="bfN-uG-pmG" eventType="touchUpInside" id="3QD-b1-n8c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91318396530000001" green="0.95925068410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -217,10 +224,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="cA3-Yk-ydG" secondAttribute="trailing" constant="52" id="aml-Ag-29X"/>
                             <constraint firstItem="cA3-Yk-ydG" firstAttribute="centerY" secondItem="PVI-iE-vl4" secondAttribute="centerY" id="cI2-6s-NhX"/>
                             <constraint firstItem="XLF-gm-wOg" firstAttribute="width" secondItem="Guq-V3-HeS" secondAttribute="width" id="dGZ-ha-8Uq"/>
-                            <constraint firstItem="cA3-Yk-ydG" firstAttribute="top" secondItem="fq7-ah-pWf" secondAttribute="bottom" constant="24" id="eZ5-ps-ffu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="fpO-yp-KxB" secondAttribute="leading" id="pdt-Kk-zMl"/>
                             <constraint firstItem="fq7-ah-pWf" firstAttribute="leading" secondItem="XLF-gm-wOg" secondAttribute="trailing" constant="23" id="phC-eO-qPp"/>
-                            <constraint firstItem="4gO-Ce-MGe" firstAttribute="top" secondItem="69J-k3-SkU" secondAttribute="bottom" constant="67" id="rq9-bg-4xb"/>
+                            <constraint firstItem="4gO-Ce-MGe" firstAttribute="top" secondItem="69J-k3-SkU" secondAttribute="bottom" constant="80" id="rq9-bg-4xb"/>
                             <constraint firstItem="XLF-gm-wOg" firstAttribute="top" secondItem="69J-k3-SkU" secondAttribute="bottom" constant="134" id="thO-mY-Psr"/>
                             <constraint firstItem="fq7-ah-pWf" firstAttribute="top" secondItem="69J-k3-SkU" secondAttribute="bottom" constant="134" id="vBv-Fu-Wl1"/>
                             <constraint firstItem="cA3-Yk-ydG" firstAttribute="centerX" secondItem="PVI-iE-vl4" secondAttribute="centerX" id="wQP-Ww-3IJ"/>
@@ -230,6 +236,7 @@
                     </view>
                     <connections>
                         <outlet property="texr" destination="4gO-Ce-MGe" id="esK-N6-KLn"/>
+                        <segue destination="sx3-c2-FUJ" kind="presentation" identifier="setMood" id="R8U-P3-VbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2d3-dc-2ei" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,11 +264,14 @@
     </scenes>
     <resources>
         <image name="Logomakr_0bc0jH (1)" width="185" height="137"/>
+        <image name="a" width="50" height="50"/>
+        <image name="b" width="50" height="50"/>
+        <image name="c" width="50" height="50"/>
+        <image name="d" width="50" height="50"/>
         <image name="dotted-circle" width="185" height="184"/>
-        <image name="unnamed" width="50" height="50"/>
-        <image name="unnamed (1)" width="50" height="50"/>
-        <image name="unnamed (2)" width="50" height="50"/>
-        <image name="unnamed (3)" width="50" height="50"/>
-        <image name="unnamed (4)" width="50" height="50"/>
+        <image name="e" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cw0-8A-X9G"/>
+    </inferredMetricsTieBreakers>
 </document>
