@@ -57,6 +57,8 @@ class HomeViewController: UIViewController {
         barChart.rightAxis.drawGridLinesEnabled = false
         barChart.rightAxis.drawLabelsEnabled = false
         barChart.drawMarkers = false
+        chartDataSet.colors = ChartColorTemplates.vordiplom()
+        chartDataSet.drawValuesEnabled = false
 
         barChart.xAxis.valueFormatter = xaxis.valueFormatter
     }

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -62,7 +62,7 @@
                         <viewControllerLayoutGuide type="top" id="k4X-aZ-H9r"/>
                         <viewControllerLayoutGuide type="bottom" id="t5i-kx-gvh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="1k7-a6-70P">
+                    <view key="view" contentMode="scaleToFill" id="1k7-a6-70P">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -80,19 +80,19 @@
                                     <tabBarItem title="Item" id="u2D-y3-N1j"/>
                                 </items>
                             </tabBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-kE-tr8" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="318" width="375" height="192"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDq-kE-tr8" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="275" width="375" height="171"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.91318396530000001" green="0.95925068410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="TDq-kE-tr8" secondAttribute="trailing" constant="51" id="PSf-ua-pq7"/>
-                            <constraint firstItem="t5i-kx-gvh" firstAttribute="top" secondItem="TDq-kE-tr8" secondAttribute="bottom" constant="157" id="S22-P9-8Er"/>
+                            <constraint firstItem="t5i-kx-gvh" firstAttribute="top" secondItem="TDq-kE-tr8" secondAttribute="bottom" constant="70" id="S22-P9-8Er"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leading" id="Zyw-xN-jOf"/>
                             <constraint firstAttribute="trailing" secondItem="TDq-kE-tr8" secondAttribute="trailing" id="afu-Fk-3ad"/>
                             <constraint firstItem="TDq-kE-tr8" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="52" id="cch-tR-jIp"/>
-                            <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="76" id="gc1-YT-bzU"/>
+                            <constraint firstItem="TDq-kE-tr8" firstAttribute="top" secondItem="pOe-rp-6aT" secondAttribute="bottom" constant="86" id="gc1-YT-bzU"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="centerX" secondItem="1k7-a6-70P" secondAttribute="centerX" id="lse-fC-E20"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="leading" secondItem="1k7-a6-70P" secondAttribute="leadingMargin" constant="80" id="sFQ-iS-mp3"/>
                             <constraint firstItem="pOe-rp-6aT" firstAttribute="top" secondItem="k4X-aZ-H9r" secondAttribute="bottom" constant="58" id="v9h-gt-HdH"/>

@@ -611,6 +611,7 @@
 				22EB3AFC1E29F02D0079C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22EB3AFD1E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQTests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +620,7 @@
 				22EB3AFF1E29F02D0079C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22EB3B001E29F02D0079C34C /* Build configuration list for PBXNativeTarget "HapQUITests" */ = {
 			isa = XCConfigurationList;
@@ -627,6 +629,7 @@
 				22EB3B021E29F02D0079C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
