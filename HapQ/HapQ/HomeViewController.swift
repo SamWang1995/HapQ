@@ -11,6 +11,9 @@ import Charts
 
 class HomeViewController: UIViewController {
     
+    @IBAction func addMood(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMood", sender: self)
+    }
     
     @IBOutlet weak var barChart: BarChartView!
     

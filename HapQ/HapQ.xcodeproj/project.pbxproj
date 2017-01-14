@@ -16,9 +16,16 @@
 		22EB3AF61E29F02D0079C34C /* HapQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3AF51E29F02D0079C34C /* HapQUITests.swift */; };
 		22EB3B041E29FEEB0079C34C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3B031E29FEEB0079C34C /* HomeViewController.swift */; };
 		22EB3B061E29FF010079C34C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3B051E29FF010079C34C /* CalendarViewController.swift */; };
-		22EB3B131E2A4F640079C34C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EB3B0E1E2A4F000079C34C /* Charts.framework */; };
-		22EB3B141E2A4F640079C34C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22EB3B0E1E2A4F000079C34C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22EB3B1B1E2A94B10079C34C /* BarChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3B1A1E2A94B10079C34C /* BarChartFormatter.swift */; };
+		22EB3B2A1E2ABB980079C34C /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB3B291E2ABB980079C34C /* MoodViewController.swift */; };
+		22EB3B361E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B2E1E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf */; };
+		22EB3B371E2AC5FC0079C34C /* Cabin-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B2F1E2AC5FC0079C34C /* Cabin-SemiBold.otf */; };
+		22EB3B381E2AC5FC0079C34C /* Cabin-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B301E2AC5FC0079C34C /* Cabin-Regular.otf */; };
+		22EB3B391E2AC5FC0079C34C /* Cabin-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B311E2AC5FC0079C34C /* Cabin-MediumItalic.otf */; };
+		22EB3B3A1E2AC5FC0079C34C /* Cabin-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B321E2AC5FC0079C34C /* Cabin-Medium.otf */; };
+		22EB3B3B1E2AC5FC0079C34C /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B331E2AC5FC0079C34C /* Cabin-Italic.otf */; };
+		22EB3B3C1E2AC5FC0079C34C /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B341E2AC5FC0079C34C /* Cabin-BoldItalic.otf */; };
+		22EB3B3D1E2AC5FC0079C34C /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22EB3B351E2AC5FC0079C34C /* Cabin-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,33 +43,26 @@
 			remoteGlobalIDString = 22EB3AD11E29F02D0079C34C;
 			remoteInfo = HapQ;
 		};
-		22EB3B0D1E2A4F000079C34C /* PBXContainerItemProxy */ = {
+		22EB3B211E2AA86A0079C34C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		22EB3B0F1E2A4F000079C34C /* PBXContainerItemProxy */ = {
+		22EB3B231E2AA86A0079C34C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		22EB3B111E2A4F000079C34C /* PBXContainerItemProxy */ = {
+		22EB3B251E2AA86A0079C34C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
-		};
-		22EB3B151E2A4F640079C34C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,7 +73,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22EB3B141E2A4F640079C34C /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,8 +95,17 @@
 		22EB3AF71E29F02D0079C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EB3B031E29FEEB0079C34C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22EB3B051E29FF010079C34C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts.xcodeproj; sourceTree = "<group>"; };
 		22EB3B1A1E2A94B10079C34C /* BarChartFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartFormatter.swift; sourceTree = "<group>"; };
+		22EB3B291E2ABB980079C34C /* MoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		22EB3B2E1E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBoldItalic.otf"; path = "../../../../Downloads/cabin/Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		22EB3B2F1E2AC5FC0079C34C /* Cabin-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBold.otf"; path = "../../../../Downloads/cabin/Cabin-SemiBold.otf"; sourceTree = "<group>"; };
+		22EB3B301E2AC5FC0079C34C /* Cabin-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Regular.otf"; path = "../../../../Downloads/cabin/Cabin-Regular.otf"; sourceTree = "<group>"; };
+		22EB3B311E2AC5FC0079C34C /* Cabin-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-MediumItalic.otf"; path = "../../../../Downloads/cabin/Cabin-MediumItalic.otf"; sourceTree = "<group>"; };
+		22EB3B321E2AC5FC0079C34C /* Cabin-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.otf"; path = "../../../../Downloads/cabin/Cabin-Medium.otf"; sourceTree = "<group>"; };
+		22EB3B331E2AC5FC0079C34C /* Cabin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Italic.otf"; path = "../../../../Downloads/cabin/Cabin-Italic.otf"; sourceTree = "<group>"; };
+		22EB3B341E2AC5FC0079C34C /* Cabin-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-BoldItalic.otf"; path = "../../../../Downloads/cabin/Cabin-BoldItalic.otf"; sourceTree = "<group>"; };
+		22EB3B351E2AC5FC0079C34C /* Cabin-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.otf"; path = "../../../../Downloads/cabin/Cabin-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EB3B131E2A4F640079C34C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,15 @@
 				22EB3B051E29FF010079C34C /* CalendarViewController.swift */,
 				22EB3AD71E29F02D0079C34C /* ViewController.swift */,
 				22EB3AD91E29F02D0079C34C /* Main.storyboard */,
+				22EB3B2E1E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf */,
+				22EB3B2F1E2AC5FC0079C34C /* Cabin-SemiBold.otf */,
+				22EB3B301E2AC5FC0079C34C /* Cabin-Regular.otf */,
+				22EB3B311E2AC5FC0079C34C /* Cabin-MediumItalic.otf */,
+				22EB3B321E2AC5FC0079C34C /* Cabin-Medium.otf */,
+				22EB3B331E2AC5FC0079C34C /* Cabin-Italic.otf */,
+				22EB3B341E2AC5FC0079C34C /* Cabin-BoldItalic.otf */,
+				22EB3B351E2AC5FC0079C34C /* Cabin-Bold.otf */,
+				22EB3B291E2ABB980079C34C /* MoodViewController.swift */,
 				22EB3ADC1E29F02D0079C34C /* Assets.xcassets */,
 				22EB3ADE1E29F02D0079C34C /* LaunchScreen.storyboard */,
 				22EB3AE11E29F02D0079C34C /* Info.plist */,
@@ -181,12 +197,12 @@
 			path = HapQUITests;
 			sourceTree = "<group>";
 		};
-		22EB3B081E2A4EFF0079C34C /* Products */ = {
+		22EB3B1C1E2AA86A0079C34C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22EB3B0E1E2A4F000079C34C /* Charts.framework */,
-				22EB3B101E2A4F000079C34C /* ChartsRealm.framework */,
-				22EB3B121E2A4F000079C34C /* ChartsTests.xctest */,
+				22EB3B221E2AA86A0079C34C /* Charts.framework */,
+				22EB3B241E2AA86A0079C34C /* ChartsRealm.framework */,
+				22EB3B261E2AA86A0079C34C /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,7 +222,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				22EB3B161E2A4F640079C34C /* PBXTargetDependency */,
 			);
 			name = HapQ;
 			productName = HapQ;
@@ -288,7 +303,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 22EB3B081E2A4EFF0079C34C /* Products */;
+					ProductGroup = 22EB3B1C1E2AA86A0079C34C /* Products */;
 					ProjectRef = 22EB3B071E2A4EFF0079C34C /* Charts.xcodeproj */;
 				},
 			);
@@ -302,25 +317,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		22EB3B0E1E2A4F000079C34C /* Charts.framework */ = {
+		22EB3B221E2AA86A0079C34C /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 22EB3B0D1E2A4F000079C34C /* PBXContainerItemProxy */;
+			remoteRef = 22EB3B211E2AA86A0079C34C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		22EB3B101E2A4F000079C34C /* ChartsRealm.framework */ = {
+		22EB3B241E2AA86A0079C34C /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = 22EB3B0F1E2A4F000079C34C /* PBXContainerItemProxy */;
+			remoteRef = 22EB3B231E2AA86A0079C34C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		22EB3B121E2A4F000079C34C /* ChartsTests.xctest */ = {
+		22EB3B261E2AA86A0079C34C /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 22EB3B111E2A4F000079C34C /* PBXContainerItemProxy */;
+			remoteRef = 22EB3B251E2AA86A0079C34C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -330,9 +345,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EB3B3C1E2AC5FC0079C34C /* Cabin-BoldItalic.otf in Resources */,
+				22EB3B3B1E2AC5FC0079C34C /* Cabin-Italic.otf in Resources */,
 				22EB3AE01E29F02D0079C34C /* LaunchScreen.storyboard in Resources */,
+				22EB3B371E2AC5FC0079C34C /* Cabin-SemiBold.otf in Resources */,
+				22EB3B3A1E2AC5FC0079C34C /* Cabin-Medium.otf in Resources */,
+				22EB3B381E2AC5FC0079C34C /* Cabin-Regular.otf in Resources */,
+				22EB3B391E2AC5FC0079C34C /* Cabin-MediumItalic.otf in Resources */,
 				22EB3ADD1E29F02D0079C34C /* Assets.xcassets in Resources */,
+				22EB3B361E2AC5FC0079C34C /* Cabin-SemiBoldItalic.otf in Resources */,
 				22EB3ADB1E29F02D0079C34C /* Main.storyboard in Resources */,
+				22EB3B3D1E2AC5FC0079C34C /* Cabin-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +385,7 @@
 				22EB3B1B1E2A94B10079C34C /* BarChartFormatter.swift in Sources */,
 				22EB3AD61E29F02D0079C34C /* AppDelegate.swift in Sources */,
 				22EB3B041E29FEEB0079C34C /* HomeViewController.swift in Sources */,
+				22EB3B2A1E2ABB980079C34C /* MoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,11 +417,6 @@
 			isa = PBXTargetDependency;
 			target = 22EB3AD11E29F02D0079C34C /* HapQ */;
 			targetProxy = 22EB3AF21E29F02D0079C34C /* PBXContainerItemProxy */;
-		};
-		22EB3B161E2A4F640079C34C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 22EB3B151E2A4F640079C34C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
